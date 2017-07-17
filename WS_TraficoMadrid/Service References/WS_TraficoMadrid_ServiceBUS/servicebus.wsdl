@@ -1,0 +1,971 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="GetRouteLines">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="idClient" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="PassKey" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="SelectDate" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Lines" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetRouteLinesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetRouteLinesResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetRouteLinesRoute">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="idClient" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="PassKey" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="SelectDate" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Lines" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetRouteLinesRouteResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetRouteLinesRouteResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCalendar">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="idClient" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="PassKey" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="SelectDateBegin" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="SelectDateEnd" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCalendarResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetCalendarResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetListLines">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="idClient" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="PassKey" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="SelectDate" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Lines" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetListLinesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetListLinesResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetListLinesExtend">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="idClient" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="PassKey" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="SelectDate" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Lines" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetListLinesExtendResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetListLinesExtendResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetGroups">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="idClient" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="PassKey" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetGroupsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetGroupsResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetTimesLines">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="idClient" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="PassKey" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="SelectDate" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Lines" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetTimesLinesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetTimesLinesResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetTimeTableLines">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="idClient" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="PassKey" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="SelectDate" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Lines" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetTimeTableLinesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetTimeTableLinesResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetNodesLines">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="idClient" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="PassKey" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Nodes" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetNodesLinesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetNodesLinesResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="EstadisticaCache">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="EstadisticaCacheResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="EstadisticaCacheResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="GetRouteLinesSoapIn">
+    <wsdl:part name="parameters" element="tns:GetRouteLines" />
+  </wsdl:message>
+  <wsdl:message name="GetRouteLinesSoapOut">
+    <wsdl:part name="parameters" element="tns:GetRouteLinesResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetRouteLinesRouteSoapIn">
+    <wsdl:part name="parameters" element="tns:GetRouteLinesRoute" />
+  </wsdl:message>
+  <wsdl:message name="GetRouteLinesRouteSoapOut">
+    <wsdl:part name="parameters" element="tns:GetRouteLinesRouteResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetCalendarSoapIn">
+    <wsdl:part name="parameters" element="tns:GetCalendar" />
+  </wsdl:message>
+  <wsdl:message name="GetCalendarSoapOut">
+    <wsdl:part name="parameters" element="tns:GetCalendarResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetListLinesSoapIn">
+    <wsdl:part name="parameters" element="tns:GetListLines" />
+  </wsdl:message>
+  <wsdl:message name="GetListLinesSoapOut">
+    <wsdl:part name="parameters" element="tns:GetListLinesResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetListLinesExtendSoapIn">
+    <wsdl:part name="parameters" element="tns:GetListLinesExtend" />
+  </wsdl:message>
+  <wsdl:message name="GetListLinesExtendSoapOut">
+    <wsdl:part name="parameters" element="tns:GetListLinesExtendResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetGroupsSoapIn">
+    <wsdl:part name="parameters" element="tns:GetGroups" />
+  </wsdl:message>
+  <wsdl:message name="GetGroupsSoapOut">
+    <wsdl:part name="parameters" element="tns:GetGroupsResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetTimesLinesSoapIn">
+    <wsdl:part name="parameters" element="tns:GetTimesLines" />
+  </wsdl:message>
+  <wsdl:message name="GetTimesLinesSoapOut">
+    <wsdl:part name="parameters" element="tns:GetTimesLinesResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetTimeTableLinesSoapIn">
+    <wsdl:part name="parameters" element="tns:GetTimeTableLines" />
+  </wsdl:message>
+  <wsdl:message name="GetTimeTableLinesSoapOut">
+    <wsdl:part name="parameters" element="tns:GetTimeTableLinesResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetNodesLinesSoapIn">
+    <wsdl:part name="parameters" element="tns:GetNodesLines" />
+  </wsdl:message>
+  <wsdl:message name="GetNodesLinesSoapOut">
+    <wsdl:part name="parameters" element="tns:GetNodesLinesResponse" />
+  </wsdl:message>
+  <wsdl:message name="EstadisticaCacheSoapIn">
+    <wsdl:part name="parameters" element="tns:EstadisticaCache" />
+  </wsdl:message>
+  <wsdl:message name="EstadisticaCacheSoapOut">
+    <wsdl:part name="parameters" element="tns:EstadisticaCacheResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetRouteLinesHttpGetIn">
+    <wsdl:part name="idClient" type="s:string" />
+    <wsdl:part name="PassKey" type="s:string" />
+    <wsdl:part name="SelectDate" type="s:string" />
+    <wsdl:part name="Lines" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetRouteLinesHttpGetOut">
+    <wsdl:part name="Body" />
+  </wsdl:message>
+  <wsdl:message name="GetRouteLinesRouteHttpGetIn">
+    <wsdl:part name="idClient" type="s:string" />
+    <wsdl:part name="PassKey" type="s:string" />
+    <wsdl:part name="SelectDate" type="s:string" />
+    <wsdl:part name="Lines" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetRouteLinesRouteHttpGetOut">
+    <wsdl:part name="Body" />
+  </wsdl:message>
+  <wsdl:message name="GetCalendarHttpGetIn">
+    <wsdl:part name="idClient" type="s:string" />
+    <wsdl:part name="PassKey" type="s:string" />
+    <wsdl:part name="SelectDateBegin" type="s:string" />
+    <wsdl:part name="SelectDateEnd" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetCalendarHttpGetOut">
+    <wsdl:part name="Body" />
+  </wsdl:message>
+  <wsdl:message name="GetListLinesHttpGetIn">
+    <wsdl:part name="idClient" type="s:string" />
+    <wsdl:part name="PassKey" type="s:string" />
+    <wsdl:part name="SelectDate" type="s:string" />
+    <wsdl:part name="Lines" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetListLinesHttpGetOut">
+    <wsdl:part name="Body" />
+  </wsdl:message>
+  <wsdl:message name="GetListLinesExtendHttpGetIn">
+    <wsdl:part name="idClient" type="s:string" />
+    <wsdl:part name="PassKey" type="s:string" />
+    <wsdl:part name="SelectDate" type="s:string" />
+    <wsdl:part name="Lines" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetListLinesExtendHttpGetOut">
+    <wsdl:part name="Body" />
+  </wsdl:message>
+  <wsdl:message name="GetGroupsHttpGetIn">
+    <wsdl:part name="idClient" type="s:string" />
+    <wsdl:part name="PassKey" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetGroupsHttpGetOut">
+    <wsdl:part name="Body" />
+  </wsdl:message>
+  <wsdl:message name="GetTimesLinesHttpGetIn">
+    <wsdl:part name="idClient" type="s:string" />
+    <wsdl:part name="PassKey" type="s:string" />
+    <wsdl:part name="SelectDate" type="s:string" />
+    <wsdl:part name="Lines" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetTimesLinesHttpGetOut">
+    <wsdl:part name="Body" />
+  </wsdl:message>
+  <wsdl:message name="GetTimeTableLinesHttpGetIn">
+    <wsdl:part name="idClient" type="s:string" />
+    <wsdl:part name="PassKey" type="s:string" />
+    <wsdl:part name="SelectDate" type="s:string" />
+    <wsdl:part name="Lines" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetTimeTableLinesHttpGetOut">
+    <wsdl:part name="Body" />
+  </wsdl:message>
+  <wsdl:message name="GetNodesLinesHttpGetIn">
+    <wsdl:part name="idClient" type="s:string" />
+    <wsdl:part name="PassKey" type="s:string" />
+    <wsdl:part name="Nodes" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetNodesLinesHttpGetOut">
+    <wsdl:part name="Body" />
+  </wsdl:message>
+  <wsdl:message name="EstadisticaCacheHttpGetIn">
+    <wsdl:part name="password" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="EstadisticaCacheHttpGetOut">
+    <wsdl:part name="Body" />
+  </wsdl:message>
+  <wsdl:message name="GetRouteLinesHttpPostIn">
+    <wsdl:part name="idClient" type="s:string" />
+    <wsdl:part name="PassKey" type="s:string" />
+    <wsdl:part name="SelectDate" type="s:string" />
+    <wsdl:part name="Lines" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetRouteLinesHttpPostOut">
+    <wsdl:part name="Body" />
+  </wsdl:message>
+  <wsdl:message name="GetRouteLinesRouteHttpPostIn">
+    <wsdl:part name="idClient" type="s:string" />
+    <wsdl:part name="PassKey" type="s:string" />
+    <wsdl:part name="SelectDate" type="s:string" />
+    <wsdl:part name="Lines" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetRouteLinesRouteHttpPostOut">
+    <wsdl:part name="Body" />
+  </wsdl:message>
+  <wsdl:message name="GetCalendarHttpPostIn">
+    <wsdl:part name="idClient" type="s:string" />
+    <wsdl:part name="PassKey" type="s:string" />
+    <wsdl:part name="SelectDateBegin" type="s:string" />
+    <wsdl:part name="SelectDateEnd" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetCalendarHttpPostOut">
+    <wsdl:part name="Body" />
+  </wsdl:message>
+  <wsdl:message name="GetListLinesHttpPostIn">
+    <wsdl:part name="idClient" type="s:string" />
+    <wsdl:part name="PassKey" type="s:string" />
+    <wsdl:part name="SelectDate" type="s:string" />
+    <wsdl:part name="Lines" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetListLinesHttpPostOut">
+    <wsdl:part name="Body" />
+  </wsdl:message>
+  <wsdl:message name="GetListLinesExtendHttpPostIn">
+    <wsdl:part name="idClient" type="s:string" />
+    <wsdl:part name="PassKey" type="s:string" />
+    <wsdl:part name="SelectDate" type="s:string" />
+    <wsdl:part name="Lines" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetListLinesExtendHttpPostOut">
+    <wsdl:part name="Body" />
+  </wsdl:message>
+  <wsdl:message name="GetGroupsHttpPostIn">
+    <wsdl:part name="idClient" type="s:string" />
+    <wsdl:part name="PassKey" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetGroupsHttpPostOut">
+    <wsdl:part name="Body" />
+  </wsdl:message>
+  <wsdl:message name="GetTimesLinesHttpPostIn">
+    <wsdl:part name="idClient" type="s:string" />
+    <wsdl:part name="PassKey" type="s:string" />
+    <wsdl:part name="SelectDate" type="s:string" />
+    <wsdl:part name="Lines" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetTimesLinesHttpPostOut">
+    <wsdl:part name="Body" />
+  </wsdl:message>
+  <wsdl:message name="GetTimeTableLinesHttpPostIn">
+    <wsdl:part name="idClient" type="s:string" />
+    <wsdl:part name="PassKey" type="s:string" />
+    <wsdl:part name="SelectDate" type="s:string" />
+    <wsdl:part name="Lines" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetTimeTableLinesHttpPostOut">
+    <wsdl:part name="Body" />
+  </wsdl:message>
+  <wsdl:message name="GetNodesLinesHttpPostIn">
+    <wsdl:part name="idClient" type="s:string" />
+    <wsdl:part name="PassKey" type="s:string" />
+    <wsdl:part name="Nodes" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetNodesLinesHttpPostOut">
+    <wsdl:part name="Body" />
+  </wsdl:message>
+  <wsdl:message name="EstadisticaCacheHttpPostIn">
+    <wsdl:part name="password" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="EstadisticaCacheHttpPostOut">
+    <wsdl:part name="Body" />
+  </wsdl:message>
+  <wsdl:portType name="ServiceBusSoap">
+    <wsdl:operation name="GetRouteLines">
+      <wsdl:input message="tns:GetRouteLinesSoapIn" />
+      <wsdl:output message="tns:GetRouteLinesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetRouteLinesRoute">
+      <wsdl:input message="tns:GetRouteLinesRouteSoapIn" />
+      <wsdl:output message="tns:GetRouteLinesRouteSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCalendar">
+      <wsdl:input message="tns:GetCalendarSoapIn" />
+      <wsdl:output message="tns:GetCalendarSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetListLines">
+      <wsdl:input message="tns:GetListLinesSoapIn" />
+      <wsdl:output message="tns:GetListLinesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetListLinesExtend">
+      <wsdl:input message="tns:GetListLinesExtendSoapIn" />
+      <wsdl:output message="tns:GetListLinesExtendSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetGroups">
+      <wsdl:input message="tns:GetGroupsSoapIn" />
+      <wsdl:output message="tns:GetGroupsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTimesLines">
+      <wsdl:input message="tns:GetTimesLinesSoapIn" />
+      <wsdl:output message="tns:GetTimesLinesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTimeTableLines">
+      <wsdl:input message="tns:GetTimeTableLinesSoapIn" />
+      <wsdl:output message="tns:GetTimeTableLinesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetNodesLines">
+      <wsdl:input message="tns:GetNodesLinesSoapIn" />
+      <wsdl:output message="tns:GetNodesLinesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="EstadisticaCache">
+      <wsdl:input message="tns:EstadisticaCacheSoapIn" />
+      <wsdl:output message="tns:EstadisticaCacheSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="ServiceBusHttpGet">
+    <wsdl:operation name="GetRouteLines">
+      <wsdl:input message="tns:GetRouteLinesHttpGetIn" />
+      <wsdl:output message="tns:GetRouteLinesHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetRouteLinesRoute">
+      <wsdl:input message="tns:GetRouteLinesRouteHttpGetIn" />
+      <wsdl:output message="tns:GetRouteLinesRouteHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCalendar">
+      <wsdl:input message="tns:GetCalendarHttpGetIn" />
+      <wsdl:output message="tns:GetCalendarHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetListLines">
+      <wsdl:input message="tns:GetListLinesHttpGetIn" />
+      <wsdl:output message="tns:GetListLinesHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetListLinesExtend">
+      <wsdl:input message="tns:GetListLinesExtendHttpGetIn" />
+      <wsdl:output message="tns:GetListLinesExtendHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetGroups">
+      <wsdl:input message="tns:GetGroupsHttpGetIn" />
+      <wsdl:output message="tns:GetGroupsHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTimesLines">
+      <wsdl:input message="tns:GetTimesLinesHttpGetIn" />
+      <wsdl:output message="tns:GetTimesLinesHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTimeTableLines">
+      <wsdl:input message="tns:GetTimeTableLinesHttpGetIn" />
+      <wsdl:output message="tns:GetTimeTableLinesHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetNodesLines">
+      <wsdl:input message="tns:GetNodesLinesHttpGetIn" />
+      <wsdl:output message="tns:GetNodesLinesHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="EstadisticaCache">
+      <wsdl:input message="tns:EstadisticaCacheHttpGetIn" />
+      <wsdl:output message="tns:EstadisticaCacheHttpGetOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="ServiceBusHttpPost">
+    <wsdl:operation name="GetRouteLines">
+      <wsdl:input message="tns:GetRouteLinesHttpPostIn" />
+      <wsdl:output message="tns:GetRouteLinesHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetRouteLinesRoute">
+      <wsdl:input message="tns:GetRouteLinesRouteHttpPostIn" />
+      <wsdl:output message="tns:GetRouteLinesRouteHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCalendar">
+      <wsdl:input message="tns:GetCalendarHttpPostIn" />
+      <wsdl:output message="tns:GetCalendarHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetListLines">
+      <wsdl:input message="tns:GetListLinesHttpPostIn" />
+      <wsdl:output message="tns:GetListLinesHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetListLinesExtend">
+      <wsdl:input message="tns:GetListLinesExtendHttpPostIn" />
+      <wsdl:output message="tns:GetListLinesExtendHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetGroups">
+      <wsdl:input message="tns:GetGroupsHttpPostIn" />
+      <wsdl:output message="tns:GetGroupsHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTimesLines">
+      <wsdl:input message="tns:GetTimesLinesHttpPostIn" />
+      <wsdl:output message="tns:GetTimesLinesHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTimeTableLines">
+      <wsdl:input message="tns:GetTimeTableLinesHttpPostIn" />
+      <wsdl:output message="tns:GetTimeTableLinesHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetNodesLines">
+      <wsdl:input message="tns:GetNodesLinesHttpPostIn" />
+      <wsdl:output message="tns:GetNodesLinesHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="EstadisticaCache">
+      <wsdl:input message="tns:EstadisticaCacheHttpPostIn" />
+      <wsdl:output message="tns:EstadisticaCacheHttpPostOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ServiceBusSoap" type="tns:ServiceBusSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetRouteLines">
+      <soap:operation soapAction="http://tempuri.org/GetRouteLines" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRouteLinesRoute">
+      <soap:operation soapAction="http://tempuri.org/GetRouteLinesRoute" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCalendar">
+      <soap:operation soapAction="http://tempuri.org/GetCalendar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetListLines">
+      <soap:operation soapAction="http://tempuri.org/GetListLines" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetListLinesExtend">
+      <soap:operation soapAction="http://tempuri.org/GetListLinesExtend" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetGroups">
+      <soap:operation soapAction="http://tempuri.org/GetGroups" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTimesLines">
+      <soap:operation soapAction="http://tempuri.org/GetTimesLines" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTimeTableLines">
+      <soap:operation soapAction="http://tempuri.org/GetTimeTableLines" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetNodesLines">
+      <soap:operation soapAction="http://tempuri.org/GetNodesLines" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EstadisticaCache">
+      <soap:operation soapAction="http://tempuri.org/EstadisticaCache" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ServiceBusSoap12" type="tns:ServiceBusSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetRouteLines">
+      <soap12:operation soapAction="http://tempuri.org/GetRouteLines" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRouteLinesRoute">
+      <soap12:operation soapAction="http://tempuri.org/GetRouteLinesRoute" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCalendar">
+      <soap12:operation soapAction="http://tempuri.org/GetCalendar" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetListLines">
+      <soap12:operation soapAction="http://tempuri.org/GetListLines" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetListLinesExtend">
+      <soap12:operation soapAction="http://tempuri.org/GetListLinesExtend" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetGroups">
+      <soap12:operation soapAction="http://tempuri.org/GetGroups" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTimesLines">
+      <soap12:operation soapAction="http://tempuri.org/GetTimesLines" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTimeTableLines">
+      <soap12:operation soapAction="http://tempuri.org/GetTimeTableLines" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetNodesLines">
+      <soap12:operation soapAction="http://tempuri.org/GetNodesLines" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EstadisticaCache">
+      <soap12:operation soapAction="http://tempuri.org/EstadisticaCache" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ServiceBusHttpGet" type="tns:ServiceBusHttpGet">
+    <http:binding verb="GET" />
+    <wsdl:operation name="GetRouteLines">
+      <http:operation location="/GetRouteLines" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="Body" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRouteLinesRoute">
+      <http:operation location="/GetRouteLinesRoute" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="Body" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCalendar">
+      <http:operation location="/GetCalendar" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="Body" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetListLines">
+      <http:operation location="/GetListLines" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="Body" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetListLinesExtend">
+      <http:operation location="/GetListLinesExtend" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="Body" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetGroups">
+      <http:operation location="/GetGroups" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="Body" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTimesLines">
+      <http:operation location="/GetTimesLines" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="Body" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTimeTableLines">
+      <http:operation location="/GetTimeTableLines" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="Body" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetNodesLines">
+      <http:operation location="/GetNodesLines" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="Body" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EstadisticaCache">
+      <http:operation location="/EstadisticaCache" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="Body" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ServiceBusHttpPost" type="tns:ServiceBusHttpPost">
+    <http:binding verb="POST" />
+    <wsdl:operation name="GetRouteLines">
+      <http:operation location="/GetRouteLines" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="Body" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRouteLinesRoute">
+      <http:operation location="/GetRouteLinesRoute" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="Body" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCalendar">
+      <http:operation location="/GetCalendar" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="Body" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetListLines">
+      <http:operation location="/GetListLines" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="Body" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetListLinesExtend">
+      <http:operation location="/GetListLinesExtend" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="Body" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetGroups">
+      <http:operation location="/GetGroups" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="Body" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTimesLines">
+      <http:operation location="/GetTimesLines" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="Body" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTimeTableLines">
+      <http:operation location="/GetTimeTableLines" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="Body" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetNodesLines">
+      <http:operation location="/GetNodesLines" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="Body" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EstadisticaCache">
+      <http:operation location="/EstadisticaCache" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="Body" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ServiceBus">
+    <wsdl:port name="ServiceBusSoap" binding="tns:ServiceBusSoap">
+      <soap:address location="https://servicios.emtmadrid.es:8443/bus/servicebus.asmx" />
+    </wsdl:port>
+    <wsdl:port name="ServiceBusSoap12" binding="tns:ServiceBusSoap12">
+      <soap12:address location="https://servicios.emtmadrid.es:8443/bus/servicebus.asmx" />
+    </wsdl:port>
+    <wsdl:port name="ServiceBusHttpGet" binding="tns:ServiceBusHttpGet">
+      <http:address location="https://servicios.emtmadrid.es:8443/bus/servicebus.asmx" />
+    </wsdl:port>
+    <wsdl:port name="ServiceBusHttpPost" binding="tns:ServiceBusHttpPost">
+      <http:address location="https://servicios.emtmadrid.es:8443/bus/servicebus.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,8 @@
+C:\UNIVERSIDAD\00_TFM\TFM_TraficoMadrid\ProyectosDesarrollo\TFM_TraficoMadrid\NET_TraficoMadrid\bin\Debug\NET_TraficoMadrid.exe.config
+C:\UNIVERSIDAD\00_TFM\TFM_TraficoMadrid\ProyectosDesarrollo\TFM_TraficoMadrid\NET_TraficoMadrid\bin\Debug\NET_TraficoMadrid.exe
+C:\UNIVERSIDAD\00_TFM\TFM_TraficoMadrid\ProyectosDesarrollo\TFM_TraficoMadrid\NET_TraficoMadrid\bin\Debug\NET_TraficoMadrid.pdb
+C:\UNIVERSIDAD\00_TFM\TFM_TraficoMadrid\ProyectosDesarrollo\TFM_TraficoMadrid\NET_TraficoMadrid\obj\Debug\NET_TraficoMadrid.csprojResolveAssemblyReference.cache
+C:\UNIVERSIDAD\00_TFM\TFM_TraficoMadrid\ProyectosDesarrollo\TFM_TraficoMadrid\NET_TraficoMadrid\obj\Debug\NET_TraficoMadrid.Properties.Resources.resources
+C:\UNIVERSIDAD\00_TFM\TFM_TraficoMadrid\ProyectosDesarrollo\TFM_TraficoMadrid\NET_TraficoMadrid\obj\Debug\NET_TraficoMadrid.csproj.GenerateResource.Cache
+C:\UNIVERSIDAD\00_TFM\TFM_TraficoMadrid\ProyectosDesarrollo\TFM_TraficoMadrid\NET_TraficoMadrid\obj\Debug\NET_TraficoMadrid.exe
+C:\UNIVERSIDAD\00_TFM\TFM_TraficoMadrid\ProyectosDesarrollo\TFM_TraficoMadrid\NET_TraficoMadrid\obj\Debug\NET_TraficoMadrid.pdb

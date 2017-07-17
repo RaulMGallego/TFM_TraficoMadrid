@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NET_TraficoMadrid", "NET_TraficoMadrid\NET_TraficoMadrid.csproj", "{337E97FC-2C90-4820-8CA9-FBC90A5FF95A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WS_TraficoMadrid", "WS_TraficoMadrid\WS_TraficoMadrid.csproj", "{D2A414E0-63AE-4E9B-9B0D-EB3CDDCD3082}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WEB_TraficoMadrid", "WEB_TraficoMadrid\WEB_TraficoMadrid.csproj", "{9CB5F7F7-5F13-4235-BB34-7B8A5026FA9B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{337E97FC-2C90-4820-8CA9-FBC90A5FF95A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{337E97FC-2C90-4820-8CA9-FBC90A5FF95A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{337E97FC-2C90-4820-8CA9-FBC90A5FF95A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{337E97FC-2C90-4820-8CA9-FBC90A5FF95A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D2A414E0-63AE-4E9B-9B0D-EB3CDDCD3082}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2A414E0-63AE-4E9B-9B0D-EB3CDDCD3082}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2A414E0-63AE-4E9B-9B0D-EB3CDDCD3082}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2A414E0-63AE-4E9B-9B0D-EB3CDDCD3082}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9CB5F7F7-5F13-4235-BB34-7B8A5026FA9B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9CB5F7F7-5F13-4235-BB34-7B8A5026FA9B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9CB5F7F7-5F13-4235-BB34-7B8A5026FA9B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9CB5F7F7-5F13-4235-BB34-7B8A5026FA9B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

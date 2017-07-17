@@ -1,0 +1,158 @@
+﻿@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+body 
+{
+    font-family: 'open sans',sans-serif !important;
+    font-size: 14px;
+    background-color: #222222;
+}
+
+/* - PANEL IZQUIERDA - */  
+#div_pri_izq {
+width: 80%;
+float: left;
+margin: 5px;
+}
+  
+.div_seg_izq {
+width: 100%;
+border: solid 1px #ff6a00;
+float: left;
+position: relative;
+margin-bottom:10px;
+}
+
+.div_seg_izq .superior {
+background-color: #333333;
+height:550px;
+border-bottom: solid 1px #4cacf3;
+}
+
+.div_seg_izq .inferior {
+background-color: #555555;
+padding: 10px;
+text-align: center;
+color: #f2f2f2;
+}
+
+/* - PANEL CENTRO - */  
+
+#div_pri_cen {
+width: 45%;
+/*border: solid 1px #4cacf3;*/
+float: left;
+margin: 10px;
+}
+
+.div_seg_cen {
+width: 100%;
+border: solid 1px #ff6a00;
+float: left;
+position: relative;
+margin-bottom:10px;
+}
+
+.div_seg_cen .superior {
+background-color: #333333;
+height:750px;
+border-bottom: solid 1px #4cacf3;
+}
+
+.div_seg_cen .inferior {
+background-color: #555555;
+padding: 10px;
+text-align: center;
+color: #f2f2f2;
+}
+
+/* - PANEL DERECHA - */  
+#div_pri_der {
+width: 18%;
+float: left;
+margin: 5px;
+}
+
+.div_seg_der {
+width: 100%;
+border: solid 1px #ff6a00;
+float: left;
+position: relative;
+margin-bottom:10px;
+}
+
+.div_seg_der .superior {
+
+border-bottom: solid 1px #4cacf3;
+padding: 10px;
+}
+
+.div_seg_der .inferior {
+background-color: #555555;
+padding: 10px;
+text-align: center;
+color: #f2f2f2;
+}
+
+#directions-panel {
+
+margin-top: 10px;
+background-color: #4cacf3;
+padding: 10px;
+
+}
+
+.labels {
+     color: #000;
+     background:#fff;
+    border:1px solid #000;
+      display:none;
+      text-align:left;
+     font-weight:bold;
+     font-family: "Lucida Grande", "Arial", sans-serif;
+     font-size: 12px;
+     text-align: center;
+     width: 100px;
+     white-space: nowrap;
+     z-index:9999999;
+    position:relative
+   }
+
+.label{
+    width:100%;
+    float:left;
+    text-align:left;
+    padding-bottom:3px;
+    font-size:14px;
+    color: #ff6a00;
+}
+input{
+    width: 100%;
+    padding: 5px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    
+}
+
+.ddl
+        {
+            border:1px solid #4cacf3;
+            /*border-radius:5px;*/
+            padding:3px;
+            /*-webkit-appearance: none; */
+            background-position:88px;
+            background-repeat:no-repeat;
+            text-indent: 0.01px;/*In Firefox*/
+            text-overflow: '';/*In Firefox*/
+        }
+
+.button {
+    background-color: #008CBA; /* azul */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+}
